@@ -1,0 +1,26 @@
+minimum_cumulusci_version: '4.10.0'
+project:
+    name: Content-Document-Link-Utils
+    package:
+        name: Content-Document-Link-Utils
+        namespace: enclib
+        api_version: '67.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Content-Document-Link-Utils/tests
+            options:
+                outputdir: robot/Content-Document-Link-Utils/results
+
+    robot_testdoc:
+        options:
+            path: robot/Content-Document-Link-Utils/tests
+            output: robot/Content-Document-Link-Utils/doc/Content-Document-Link-Utils_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
