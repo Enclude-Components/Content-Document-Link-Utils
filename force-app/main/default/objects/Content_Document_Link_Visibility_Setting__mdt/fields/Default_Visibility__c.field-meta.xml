@@ -12,12 +12,12 @@
             <sorted>false</sorted>
             <value>
                 <fullName>AllUsers</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>All Users</label>
             </value>
             <value>
                 <fullName>InternalUsers</fullName>
-                <default>true</default>
+                <default>false</default>
                 <label>Internal Users</label>
             </value>
         </valueSetDefinition>
