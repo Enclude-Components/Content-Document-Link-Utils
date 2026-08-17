@@ -15,6 +15,15 @@ https://help.salesforce.com/s/articleView?id=005101347&type=1
 
 Only new `ContentDocumentLink` records are affected. Existing files from before package installation with `Visibility = InternalUsers` are unaffected.
 
+## Creating a Content Document Link Visibility Setting for an Object
+- ⚙️ Setup -> Search "Custom Metadata Types" -> Find `Content Document Link Visibility Setting` -> Click `Manage Records` -> Click `New`
+- Create and Save a Setting:
+    - Label: [Your SObject's Label]
+    - Content Document Link Visibility Setting Name: [Allow to auto-fill]
+    - Default Visibility: `All Users` (Default)
+    - SObject: [Find and select your SObject type]
+- Click `Save`
+
 ## Development
 
 To work on this project in a scratch org:
