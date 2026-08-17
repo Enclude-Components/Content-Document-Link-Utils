@@ -5,7 +5,7 @@
  * @since 17/08/2026
  * @author Brandon DeMatteis, Enclude
  */
-public with sharing class ContentDocLinkVisibilityHandler {
+public without sharing class ContentDocLinkVisibilityHandler {
     /** @description Visibility value that grants access to Experience Cloud users */
     @TestVisible
     private static final String ALL_USERS_VISIBILITY = 'AllUsers';

@@ -4,7 +4,7 @@
  * @since 17/08/2026
  * @author Brandon DeMatteis, Enclude
  */
-public with sharing class ContentDocLinkVisibilitySettings {
+public without sharing class ContentDocLinkVisibilitySettings {
     /** @description Test-only override so tests can supply rules without Custom Metadata records */
     @TestVisible
     private static Map<String, Content_Document_Link_Visibility_Setting__mdt> mockSettingsByObject;
@@ -22,6 +22,7 @@ public with sharing class ContentDocLinkVisibilitySettings {
         for (Content_Document_Link_Visibility_Setting__mdt setting : [
             SELECT Default_Visibility__c, SObject__r.QualifiedApiName
             FROM Content_Document_Link_Visibility_Setting__mdt
+            WITH SYSTEM_MODE
         ]) {
             if (setting.SObject__r == null) {
                 continue;
