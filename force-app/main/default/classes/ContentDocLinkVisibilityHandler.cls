@@ -2,7 +2,7 @@
  * @description Sets ContentDocumentLink.Visibility on newly inserted links based on per-SObject rules
  * in Content_Document_Link_Visibility_Setting__mdt. Has no effect when Experience Cloud is disabled,
  * the linked entity is a User or CollaborationGroup, or no rule exists for the linked object.
- * @since 08/17/2026
+ * @since 17/08/2026
  * @author Brandon DeMatteis, Enclude
  */
 public with sharing class ContentDocLinkVisibilityHandler {

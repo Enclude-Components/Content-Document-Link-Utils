@@ -1,7 +1,7 @@
 /**
  * @description Reads Content_Document_Link_Visibility_Setting__mdt records into a map keyed by
  * lowercase SObject API name. An object with no configured record has no entry in the map.
- * @since 08/17/2026
+ * @since 17/08/2026
  * @author Brandon DeMatteis, Enclude
  */
 public with sharing class ContentDocLinkVisibilitySettings {
