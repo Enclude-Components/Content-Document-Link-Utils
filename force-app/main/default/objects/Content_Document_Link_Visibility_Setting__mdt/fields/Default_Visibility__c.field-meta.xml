@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Visibility__c</fullName>
+    <description>The Visibility value to apply to ContentDocumentLink.Visibility for files attached to records of the configured SObject type: All Users (visible to internal and Experience Cloud users with record access) or Internal Users (visible to internal users with record access).</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Default Visibility</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AllUsers</fullName>
+                <default>true</default>
+                <label>All Users</label>
+            </value>
+            <value>
+                <fullName>InternalUsers</fullName>
+                <default>false</default>
+                <label>Internal Users</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
